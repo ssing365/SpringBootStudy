@@ -1,0 +1,18 @@
+package com.edu.springboot.bean1;
+
+public class Person {
+	
+	private String name;
+	private int age;
+	private Notebook notebook;
+	
+	public Person() {}
+	public Person(String name, int age, Notebook notebook) {
+		super();
+		this.name = name;
+		this.age = age;
+		this.notebook = notebook;
+	}
+	
+
+}

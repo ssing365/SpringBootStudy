@@ -1,0 +1,7 @@
+<body>
+	<h2>sub.html</h2>
+	<div>
+		sub디렉토리 하위 파일입니다. <br>
+		<img alt="" src="/images/SpringBoot.png">
+	</div>
+</body>

@@ -1,0 +1,7 @@
+<body>
+	<h2>index.html</h2>
+	<div>
+		인덱스파일입니다. <br>
+		<img alt="" src="/images/SpringBoot.png">
+	</div>
+</body>

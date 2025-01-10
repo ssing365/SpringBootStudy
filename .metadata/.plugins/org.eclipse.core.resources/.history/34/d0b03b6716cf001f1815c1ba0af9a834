@@ -1,0 +1,15 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h2>sub.html</h2>
+	<div>
+		sub디렉토리 하위 파일입니다. <br>
+		<img alt="" src="/images/SpringBoot.png">
+	</div>
+</body>
