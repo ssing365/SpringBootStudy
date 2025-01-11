@@ -7,19 +7,19 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<p>
-		아이디 : ${id}<br>
-		패스워드 : ${pwd}<br>
-		이름:${name}<br>
-		성별 : ${sex} <br>
-		이메일:${email }<br>
-		이메일 수신여부:${emailAgree }<br>
-		우편번호:${mail}<br>
-		주소:${address }<br>
-		핸드폰:${phone }<br>
-		SMS수신여부:${SMS }<br>
-		관심분야:${hobby } <br>
-		가입경로:${route } <br>
-	</p>
+<ul>
+	<li>아이디 : ${userDTO.id}</li>
+	<li>패스워드 : ${userDTO.pass1}</li>
+	<li>이름:${userDTO.name}</li>
+	<li>성별 : ${userDTO.sex}</li>
+	<li>이메일:${userDTO.email1}@${userDTO.email2}</li>
+	<li>이메일 수신여부:${userDTO.mailing }</li>
+	<li>우편번호:${userDTO.zipcode}</li>
+	<li>주소:${userDTO.addr1 }-${userDTO.addr2 }</li>
+	<li>핸드폰:${userDTO.phone1}-${userDTO.phone2}-${userDTO.phone3}</li>
+	<li>SMS수신여부:${userDTO.sms }</li>
+	<li>관심분야:${userDTO.etc_no1 }</li>
+	<li>가입경로:${userDTO.etc_no2 }</li>
+</ul>
 </body>
 </html>

@@ -17,8 +17,6 @@
 		<li><a href="./memberLogin.do">로그인</a></li>
 	</ul>
 	
-	
-	
 	<h2>정적 파일</h2>
 	<ul>
 		<li><a href="./index.html">index.html</a></li>

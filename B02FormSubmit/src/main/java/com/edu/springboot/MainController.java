@@ -29,10 +29,8 @@ public class MainController {
 	
 	/*
 	 * 컨트롤러에 매핑된 각 메서드에서
-	 * String을 반환하면 application.properties의 JSP설정에의해
-	 * View의 경로가 조립된다.
-	 * "Prefix경로 + 메서드 반환값 + suffix경로"에 해당하는 
-	 * JSP파일을 찾아 포워드한다.
+	 * String을 반환하면 application.properties의 JSP설정에 의해 View의 경로가 조립된다.
+	 * "Prefix경로 + 메서드 반환값 + suffix경로"에 해당하는 JSP파일을 찾아 포워드한다.
 	 * 즉 이 함수는 index.jsp파일을 찾아 포워드한다. 
 	 */
 	@RequestMapping("/index.do")
@@ -48,8 +46,7 @@ public class MainController {
 	/*
 	 * 1. request 내장객체를 통해 폼값 받기
 	 * : JSP에서 사용하던 방식으로 request내장객체를 통해 폼값을 받는다.
-	 * 내장객체 사용을 위해 이 함수의 매개변수로 선언한 후 getParameter()
-	 * 메서드를 호출하면 된다.
+	 * 내장객체 사용을 위해 이 함수의 매개변수로 선언한 후 getParameter() 메서드를 호출하면 된다.
 	 * */
 	
 	@RequestMapping("/form1.do")
@@ -59,10 +56,8 @@ public class MainController {
 		String name = httpServletRequest.getParameter("name");
 		String age = httpServletRequest.getParameter("age");
 		/*
-		 * View로 전달한 데이터가 있는 경우 서블릿에서는
-		 * request영역에 저장한 후 포워드했다.
-		 * SpringBoot에서는 Model객체에 저장한 후 
-		 * 포워드 대신 View의 경로를 반환한다.
+		 * View로 전달할 데이터가 있는 경우 서블릿에서는 request영역에 저장한 후 포워드했다.
+		 * SpringBoot에서는 포워드 대신 Model객체에 저장한 후 View의 경로를 반환한다.
 		 * */
 		model.addAttribute("name", name);
 		model.addAttribute("age", age);
@@ -72,8 +67,7 @@ public class MainController {
 	
 	/*
 	 * 2. 어노테이션을 통해 파라미터를 받은 후 변수에 저장
-	 * @RequestParam에 지정된 파라미터명으로 값을 받은 후 우측에 정의한
-	 * 매개변수에 저장한다.
+	 * @RequestParam에 지정된 파라미터명으로 값을 받은 후 우측에 정의한 매개변수에 저장한다.
 	 * */
 	@RequestMapping("/form2.do")
 	public String form2(@RequestParam("name") String name,
@@ -96,7 +90,8 @@ public class MainController {
 		 * 요청시 사용되는 파라미터명과 DTO의 멤버변수명을 동일하게 정의하면
 		 * 개수에 상관없이 setter를 통해 한꺼번에 폼값을 받아 저장할 수 있다.
 		 * 또한 Model객체에 자동으로 저장되므로
-		 * View로 전달하기 위해 별도의 저장 로직을 작성할 필요가 없다.*/
+		 * View로 전달하기 위해 별도의 저장 로직을 작성할 필요가 없다.
+		 * */
 		return "form/submit3";
 	}
 	
@@ -114,47 +109,14 @@ public class MainController {
 		return "form/submit4";
 	}
 	
-	@RequestMapping("/memberRegist.do")
-	public String memberRegist() {
-		return "member/regist";
-	}
+
+	/**
+	 * 퀴즈 - 로그인 입력값 받아 출력하기
+	 *  : request 내장객체를 이용하는 방법 활용
+	 */
 	@RequestMapping("/memberLogin.do")
 	public String memberLogin() {
 		return "member/login";
-	}
-	
-	@RequestMapping("/registProcess.do")
-	public String registProcess(HttpServletRequest httpServletRequest,
-			Model model) {
-
-		String id = httpServletRequest.getParameter("id");
-		String pwd = httpServletRequest.getParameter("pass1");
-		String name = httpServletRequest.getParameter("name");
-		String sex = httpServletRequest.getParameter("sex");
-		String email = httpServletRequest.getParameter("email1");
-		String emailAgree = httpServletRequest.getParameter("mailing");
-		String mail = httpServletRequest.getParameter("zipcode");
-		String address = httpServletRequest.getParameter("addr1");
-		String phone = httpServletRequest.getParameter("phone1");
-		String SMS = httpServletRequest.getParameter("sms");
-		String hobby = httpServletRequest.getParameter("etc_no1");
-		String route = httpServletRequest.getParameter("etc_no2");
-		
-		
-		model.addAttribute("id", id);
-		model.addAttribute("pwd", pwd);
-		model.addAttribute("name", name);
-		model.addAttribute("sex", sex);
-		model.addAttribute("email", email);
-		model.addAttribute("emailAgree", emailAgree);
-		model.addAttribute("mail", mail);
-		model.addAttribute("address", address);
-		model.addAttribute("phone", phone);
-		model.addAttribute("SMS", SMS);
-		model.addAttribute("hobby", hobby);
-		model.addAttribute("route", route);
-		
-		return "member/registProcess";
 	}
 	@RequestMapping("/loginProcess.do")
 	public String loginProcess(HttpServletRequest httpServletRequest,
@@ -167,5 +129,20 @@ public class MainController {
 		model.addAttribute("pwd", pwd);
 		
 		return "member/loginProcess";
+	}
+	
+	/**
+	 * 퀴즈 - 회원가입 입력값 받아 출력하기
+	 *  : 커맨드객체(DTO)를 사용해보자 !
+	 */
+	
+	@RequestMapping("/memberRegist.do")
+	public String memberRegist() {
+		return "member/regist";
+	}
+	
+	@RequestMapping("/registProcess.do")
+	public String registProcess(UserDTO userDTO) {
+		return "member/registProcess";
 	}
 }

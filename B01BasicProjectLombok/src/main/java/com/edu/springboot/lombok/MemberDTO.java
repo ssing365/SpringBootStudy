@@ -7,7 +7,7 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 // getter, setter, 기본 생성자, Object 클래스의 메서드까지 생성됨. 이거면 보통 다 커버 가능
-@Data
+//@Data
 // 아래는 개별적으로 생성.
 //@Setter
 //@Getter
