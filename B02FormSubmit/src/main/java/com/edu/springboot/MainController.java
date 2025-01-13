@@ -136,11 +136,13 @@ public class MainController {
 	 *  : 커맨드객체(DTO)를 사용해보자 !
 	 */
 	
+	// 회원가입 입력폼
 	@RequestMapping("/memberRegist.do")
 	public String memberRegist() {
 		return "member/regist";
 	}
 	
+	// 회원가입 입력폼 출력
 	@RequestMapping("/registProcess.do")
 	public String registProcess(UserDTO userDTO) {
 		return "member/registProcess";
