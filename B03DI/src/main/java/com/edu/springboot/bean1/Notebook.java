@@ -12,6 +12,4 @@ public class Notebook {
 	public String toString() {
 		return "Notebook [cpu=" + cpu + "]";
 	}
-	
-
 }
