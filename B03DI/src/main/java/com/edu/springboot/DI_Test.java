@@ -7,7 +7,7 @@ class Person{
 	 * 생성자가 public이면 외부에서 인스턴스 생성 가능
 	 * 하지만 private으로 선언하면 외부에서 인스턴스를 생성할 수 없다.
 	 */
-	private Person() {
+	public Person() {
 		System.out.println("public 생성자 호출");
 	}
 }

@@ -1,5 +1,6 @@
 package com.edu.springboot.bean1;
 
+// 데이터 저장 기능만 있는 일반적인 DTO클래스(VO라고도 함)
 public class Person {
 	
 	private String name;
@@ -37,7 +38,8 @@ public class Person {
 		this.notebook = notebook;
 	}
 
-	// toString()
+	// toString() 메서드 오버라이딩. 
+	// : 인스턴스 변수를 직접 print해서 클래스의 
 	@Override
 	public String toString() {
 		return "Person [name=" + name + ", age=" + age + ", notebook=" + notebook + "]";
