@@ -27,7 +27,5 @@
 	<input type="button" value="전송1" onclick="sending(this.form,1)">
 	<input type="button" value="전송2" onclick="sending(this.form,2)">
 </form>
-
-
 </body>
 </html>

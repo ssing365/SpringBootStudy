@@ -42,7 +42,10 @@ dependencies {
 	implementation 'jakarta.servlet:jakarta.servlet-api'
 	implementation 'jakarta.servlet.jsp.jstl:jakarta.servlet.jsp.jstl-api'
 	implementation 'org.glassfish.web:jakarta.servlet.jsp.jstl'
-	implementation 'org.apache.tomcat.embed:tomcat-embed-jasper'	
+	implementation 'org.apache.tomcat.embed:tomcat-embed-jasper'
+	
+	//validation 어노테이션을 위한 의존설정
+	implementation 'org.springframework.boot:spring-boot-starter-validation'	
 }
 
 tasks.named('test') {

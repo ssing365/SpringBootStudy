@@ -2,6 +2,7 @@ package com.edu.springboot;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.validation.BindingResult;
+import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 
@@ -60,6 +61,37 @@ public class MainController {
 				System.out.println("내용 검증1(디폴트메시지):"
 						+result.getFieldError("content").getDefaultMessage());
 			}			
+		}
+		return page;
+	}
+	
+	/*
+	 * 어노테이션을 통한 검증이므로 폼값 저장을 위해 VO객체에 @Validated를 추가해야한다.
+	 */
+	@RequestMapping("/writeAction2.do")
+	public String writeAction2(@ModelAttribute("dto") @Validated BoardVO boardVo,
+			BindingResult result) {
+		
+		String page = "result";
+		System.out.println(boardVo);
+		
+		// 검증을 위한 클래스를 별도로 정의할 필요가 없으므로 주석 처리
+//		BoardValidator validator = new BoardValidator();
+//		validator.validate(BoardDTO, result);
+		
+		// 폼값 검증에 문제가 생긴 경우 if문 실행
+		if(result.hasErrors()) {
+			page = "write";
+			System.out.println("검증 실패 반환값 2 : " + result.toString());
+			
+			if(result.getFieldError("title")!=null) {
+				System.out.println("제목 검증2(에러코드):"+
+						result.getFieldError("title").getCode());
+			}
+			if(result.getFieldError("content")!=null) {
+				System.out.println("내용 검증2(디폴트메시지):"
+						+result.getFieldError("content").getDefaultMessage());
+			}
 		}
 		return page;
 	}
