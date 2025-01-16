@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper
+	PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!-- 컨트롤러가 호출하는 인터페이스 위치를 namespace로 설정 -->
+<mapper namespace="com.edu.springboot.jdbc.IBoardService">
+
+	<!-- 
+	게시물 개수 카운트 
+		: 그룹함수 count()를 사용하므로 resultType은 int형으로 명시한다.
+		또한 파라미터를 저장한 DTO를 사용하므로 parameterType도 명시하고 있다.
+	-->
+	<select id="getTotalCount" resultType="int"
+	parameterType="com.edu.springboot.jdbc.ParameterDTO">
+		SELECT COUNT(*) from myboard
+		<!-- 검색어가 있는 경우에만 where절을 동적으로 추가 -->
+		<if test="searchKeyword!=null
+			and !searchKeyword.equals('')">
+		WHERE ${searchField} LIKE '%'||#{searchKeyword}||'%'
+		</if>
+	</select>
+	
+	<!-- 
+	페이지에 출력할 게시물 인출
+	레코드를 인출한 결과를 반환하므로 resultType은 DTO객체로 설정한다.
+	Mapper는 인출한 결과를 1차로 DTO에 저장한 후 2차로 List에 추가하여 반환해준다.
+	-->
+	<select id="listPage"
+		resultType="com.edu.springboot.jdbc.BoardDTO"
+		parameterType="com.edu.springboot.jdbc.ParameterDTO">
+		SELECT * FROM (
+			SELECT Tb.*, rownum rNum FROM(
+				SELECT * FROM myboard
+				<if test="searchKeyword!=null and !searchKeyword.eqauls('')">
+				WHERE ${searchField} LIKE '%'||#{searchKeyword}||'%'
+				</if>
+				ORDER BY idx DESC
+				) Tb
+			)
+			WHERE rNum<![CDATA[>=]]>#{start}
+					AND rNum<![CDATA[<=]]>#{end}
+		</select>
+		<!-- 
+		CDATA 
+			: unparsed Character Data. 파싱되지 않은 문자데이터.
+		Mapper는 XML이므로 꺽쇄괄호로 시작하는 모든 문자열을 엘리먼트로 판단한다.
+		따라서 비교연산자를 쓰면 에러가 발생한다.
+		이 경우 파싱되지 않는 별도의 문자라는 것을 명시하기 위해 CDATA로 감싸줘야한다.
+		-->
+		
+	<!-- @Param 어노테이션으로 변수명을 변경해서 전달하므로 아래와 같이 인파라미터를 설정한다. -->
+	<insert id="write">
+		INSERT INTO myboard (idx, name, title, content)
+		VALUES (myboard_seq.nextval, #{_name}, #{_title}, #{_content})
+	</insert>
+</mapper>

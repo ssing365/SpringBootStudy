@@ -12,7 +12,6 @@ import org.springframework.stereotype.Service;
  */
 @Service
 public interface IMemberService {
-	
 	// 회원 정보 추가
 	public int insert(MemberDTO memberDTO);
 	// 회원목록(리스트)

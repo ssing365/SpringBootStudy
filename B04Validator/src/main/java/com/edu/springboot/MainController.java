@@ -76,8 +76,8 @@ public class MainController {
 		System.out.println(boardVo);
 		
 		// 검증을 위한 클래스를 별도로 정의할 필요가 없으므로 주석 처리
-//		BoardValidator validator = new BoardValidator();
-//		validator.validate(BoardDTO, result);
+		// BoardValidator validator = new BoardValidator();
+		// validator.validate(BoardDTO, result);
 		
 		// 폼값 검증에 문제가 생긴 경우 if문 실행
 		if(result.hasErrors()) {
