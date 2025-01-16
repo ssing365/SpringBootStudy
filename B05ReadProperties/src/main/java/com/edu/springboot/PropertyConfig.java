@@ -26,5 +26,4 @@ public class PropertyConfig {
 		propertiesFactoryBean.setLocation(classPathResource);
 		return propertiesFactoryBean;
 	}
-
 }
