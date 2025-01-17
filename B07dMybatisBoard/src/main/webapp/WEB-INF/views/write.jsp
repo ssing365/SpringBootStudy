@@ -30,6 +30,7 @@
  * 2. id 속성이 부여되어 있는 경우
  *  : document.getElementById("아이디")
  *  혹은 document.querySelector("#아이디")
+ *
  * 이렇게 DOM에 접근한 후 value, type 등의 속성을 제어할 수 있다.
  */
 	

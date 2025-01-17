@@ -25,12 +25,26 @@
 			<td>${row.regidate }</td>
 			<td>
 				<a href="edit.do?id=${row.id }">수정</a>
-				<a href="delete.do?id=${row.id }">삭제</a>
+				<a href="#" onclick="deletePost('${row.id}')">삭제</a>
 			</td>
 		</tr>
 		</c:forEach>
 	</table>
 	<a href="regist.do">회원등록</a>
-	<input></input>
+	<form name="delFrm">
+		<input type="hiddden" name="id"></input>
+	</form>
+	
+<script type="text/javascript">
+	function deletePost(idx){
+		const f = document.delFrm;
+		f.id.value = idx;
+		f.method = "post";
+		f.action = "delete.do";
+		if(window.confirm("삭제하시겠습니까?")){
+			f.submit();
+		}
+	}
+</script>
 </body>
 </html>

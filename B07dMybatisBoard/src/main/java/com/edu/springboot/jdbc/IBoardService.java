@@ -27,4 +27,6 @@ public interface IBoardService {
 	public int edit(BoardDTO boardDTO);
 //	삭제
 	public int delete(String idx);
+//	조회수 증가
+	public int visitCountPlus(BoardDTO boardDTO);
 }
