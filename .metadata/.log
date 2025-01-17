@@ -1264,3 +1264,549 @@ org.eclipse.core.runtime.OperationCanceledException
 
 !ENTRY org.eclipse.lsp4e 1 0 2025-01-16 16:47:04.268
 !MESSAGE [Info]	ESLint server running in node v22.11.0
+!SESSION 2025-01-17 09:23:40.757 -----------------------------------------------
+eclipse.buildId=4.34.0.202411281622
+java.version=21.0.5
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Framework arguments:  -product org.springframework.boot.ide.branding.sts4
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springframework.boot.ide.branding.sts4
+
+!ENTRY ch.qos.logback.classic 1 0 2025-01-17 09:24:09.756
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2025-01-17 09:24:11.997
+!MESSAGE Logback config file: C:\workspace\SpringBoot\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.7.0.20241001-1350.xml
+
+!ENTRY org.eclipse.ui 2 0 2025-01-17 09:24:12.454
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2025-01-17 09:24:12.454
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2025-01-17 09:24:12.626
+!MESSAGE Unable to load class 'org.eclipse.e4.ui.workbench.renderers.swt.cocoa.CocoaUIHandler' from bundle '171'
+!STACK 0
+java.lang.ClassNotFoundException: org.eclipse.e4.ui.workbench.renderers.swt.cocoa.CocoaUIHandler cannot be found by org.eclipse.e4.ui.workbench.renderers.swt_0.16.600.v20241008-1401
+	at org.eclipse.osgi.internal.loader.BundleLoader.generateException(BundleLoader.java:562)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass0(BundleLoader.java:557)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:434)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:174)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.loadClass(EquinoxBundle.java:643)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.createFromBundle(ReflectionContributionFactory.java:88)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.doCreate(ReflectionContributionFactory.java:59)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.create(ReflectionContributionFactory.java:37)
+	at org.eclipse.e4.ui.internal.workbench.swt.E4Application.createE4Workbench(E4Application.java:273)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:592)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:570)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:178)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:143)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:109)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:439)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:271)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:668)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:605)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
+
+!ENTRY org.eclipse.ui 2 0 2025-01-17 09:24:12.735
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2025-01-17 09:24:12.735
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.eclipse.egit.ui 2 0 2025-01-17 09:24:19.976
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\kosmo'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-01-17 09:24:20.054
+!MESSAGE Boot project ADDED: B00SpringBootProject
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-01-17 09:24:20.055
+!MESSAGE Starting Boot LS...
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-01-17 09:24:20.068
+!MESSAGE Started Boot LS process
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-01-17 09:24:20.069
+!MESSAGE Boot project ADDED: B01BasicProjectLombok
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-01-17 09:24:20.069
+!MESSAGE Boot project ADDED: B01CopyLombok
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-01-17 09:24:20.069
+!MESSAGE Boot project ADDED: B02FormSubmit
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-01-17 09:24:20.069
+!MESSAGE Boot project ADDED: B03DI
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-01-17 09:24:20.070
+!MESSAGE Boot project ADDED: B04Validator
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-01-17 09:24:20.070
+!MESSAGE Boot project ADDED: B05ReadProperties
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-01-17 09:24:20.070
+!MESSAGE Boot project ADDED: B06JdbcTemplate
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-01-17 09:24:20.071
+!MESSAGE Boot project ADDED: B07aMybatis
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-01-17 09:24:20.071
+!MESSAGE Boot project ADDED: B07bMybatisParameter
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-01-17 09:24:20.071
+!MESSAGE Boot project ADDED: B07cMybatisLogback
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-01-17 09:24:20.072
+!MESSAGE Boot project ADDED: B07dMybatisBoard
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2025-01-17 09:24:20.112
+!MESSAGE Command list starting LS: org.springframework.tooling.boot.ls
+START:
+C:\Developkits\sts-4.27.0.RELEASE\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_21.0.5.v20241023-1957\jre\bin\javaw.exe
+-Dsts.lsp.client=eclipse
+-Xmx1024m
+-XX:TieredStopAtLevel=1
+-Dspring.config.location=classpath:/application.properties
+-Xlog:jni+resolve=off
+-XX:ErrorFile=C:/workspace/SpringBoot/.metadata/.plugins/org.springframework.tooling.boot.ls/fatal-error-spring-boot_1737073460112
+-Dlanguageserver.hover-timeout=225
+-jar
+C:\Developkits\sts-4.27.0.RELEASE\plugins\org.springframework.tooling.boot.ls_1.59.0.202411281450\servers\spring-boot-language-server\spring-boot-language-server-1.59.0-SNAPSHOT-exec.jar
+END
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-01-17 09:24:20.113
+!MESSAGE DelegatingStreamConnectionProvider - Starting Boot LS
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2025-01-17 09:24:20.148
+!MESSAGE Started org.springframework.tooling.boot.ls LS process 3164
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2025-01-17 09:41:37.791
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/application-client_9.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2025-01-17 09:41:37.792
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/jobXML_2_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2025-01-17 09:41:37.793
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/beans_3_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2025-01-17 09:41:37.794
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jaxb/bindingschema_3_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2025-01-17 09:41:37.800
+!MESSAGE The given URI https://jakarta.ee/xml/ns/validation/validation-configuration-3.0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2025-01-17 09:41:37.803
+!MESSAGE The given URI http://xmlns.jcp.org/xml/ns/javaee/web-facesconfig_2_1.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.lsp4e 2 0 2025-01-17 09:53:54.116
+!MESSAGE Unable to compute end of document
+!STACK 0
+org.eclipse.jface.text.BadLocationException: 3314
+	at org.eclipse.jface.text.TreeLineTracker.lineByOffset(TreeLineTracker.java:268)
+	at org.eclipse.jface.text.TreeLineTracker.getLineNumberOfOffset(TreeLineTracker.java:1112)
+	at org.eclipse.jface.text.AbstractLineTracker.getLineNumberOfOffset(AbstractLineTracker.java:246)
+	at org.eclipse.jface.text.AbstractDocument.getLineOfOffset(AbstractDocument.java:863)
+	at org.eclipse.core.internal.filebuffers.SynchronizableDocument.getLineOfOffset(SynchronizableDocument.java:334)
+	at org.eclipse.lsp4e.LSPEclipseUtils.toPosition(LSPEclipseUtils.java:195)
+	at org.eclipse.lsp4e.operations.inlayhint.InlayHintProvider.provideCodeMinings(InlayHintProvider.java:44)
+	at org.eclipse.lsp4e.operations.inlayhint.InlayHintProvider.provideCodeMinings(InlayHintProvider.java:80)
+	at org.eclipse.jface.internal.text.codemining.CodeMiningManager.lambda$2(CodeMiningManager.java:191)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:1024)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682)
+	at org.eclipse.jface.internal.text.codemining.CodeMiningManager.getCodeMinings(CodeMiningManager.java:197)
+	at org.eclipse.jface.internal.text.codemining.CodeMiningManager.updateCodeMinings(CodeMiningManager.java:142)
+	at org.eclipse.jface.internal.text.codemining.CodeMiningManager.run(CodeMiningManager.java:131)
+	at org.eclipse.jface.text.source.SourceViewer.updateCodeMinings(SourceViewer.java:1333)
+	at org.eclipse.jdt.internal.ui.javaeditor.JavaCodeMiningReconciler.reconciled(JavaCodeMiningReconciler.java:51)
+	at org.eclipse.jdt.internal.ui.javaeditor.CompilationUnitEditor.reconciled(CompilationUnitEditor.java:1685)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconciled(JavaReconcilingStrategy.java:228)
+	at org.eclipse.jdt.internal.ui.text.JavaCompositeReconcilingStrategy.reconciled(JavaCompositeReconcilingStrategy.java:171)
+	at org.eclipse.jdt.internal.ui.text.JavaCompositeReconcilingStrategy.reconcile(JavaCompositeReconcilingStrategy.java:115)
+	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:78)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:207)
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2025-01-17 09:58:46.222
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/application-client_9.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2025-01-17 09:58:46.223
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/jobXML_2_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2025-01-17 09:58:46.223
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/beans_3_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2025-01-17 09:58:46.223
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jaxb/bindingschema_3_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2025-01-17 09:58:46.227
+!MESSAGE The given URI https://jakarta.ee/xml/ns/validation/validation-configuration-3.0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2025-01-17 09:58:46.230
+!MESSAGE The given URI http://xmlns.jcp.org/xml/ns/javaee/web-facesconfig_2_1.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.lsp4e 2 0 2025-01-17 09:59:29.923
+!MESSAGE Javadoc unavailable. Failed to obtain it.
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:386)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:66)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.eclipse.lsp4e 2 0 2025-01-17 09:59:40.920
+!MESSAGE Javadoc unavailable. Failed to obtain it.
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:386)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:66)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-01-17 11:04:02.791
+!MESSAGE [Info]	ESLint server running in node v22.11.0
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-01-17 11:04:02.915
+!MESSAGE [Info]	Using Typescript version (user-setting) 5.6.3 from path "C:\Developkits\sts-4.27.0.RELEASE\plugins\org.eclipse.wildwebdeveloper_1.2.4.202411181846\node_modules\typescript\lib\tsserver.js"
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-01-17 11:04:02.933
+!MESSAGE [Info]	Typescript Server version info: {version=5.6.3, source=user-setting}
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2025-01-17 11:08:43.222
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/application-client_9.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2025-01-17 11:08:43.223
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/jobXML_2_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2025-01-17 11:08:43.223
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/beans_3_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2025-01-17 11:08:43.224
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jaxb/bindingschema_3_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2025-01-17 11:08:43.228
+!MESSAGE The given URI https://jakarta.ee/xml/ns/validation/validation-configuration-3.0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2025-01-17 11:08:43.231
+!MESSAGE The given URI http://xmlns.jcp.org/xml/ns/javaee/web-facesconfig_2_1.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-01-17 11:08:43.749
+!MESSAGE [Info]	ESLint server running in node v22.11.0
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-01-17 11:09:35.002
+!MESSAGE [Info]	Using Typescript version (user-setting) 5.6.3 from path "C:\Developkits\sts-4.27.0.RELEASE\plugins\org.eclipse.wildwebdeveloper_1.2.4.202411181846\node_modules\typescript\lib\tsserver.js"
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-01-17 11:09:35.007
+!MESSAGE [Info]	Typescript Server version info: {version=5.6.3, source=user-setting}
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2025-01-17 11:29:23.607
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/application-client_9.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2025-01-17 11:29:23.608
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/jobXML_2_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2025-01-17 11:29:23.608
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/beans_3_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2025-01-17 11:29:23.609
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jaxb/bindingschema_3_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2025-01-17 11:29:23.613
+!MESSAGE The given URI https://jakarta.ee/xml/ns/validation/validation-configuration-3.0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2025-01-17 11:29:23.615
+!MESSAGE The given URI http://xmlns.jcp.org/xml/ns/javaee/web-facesconfig_2_1.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-01-17 11:29:24.155
+!MESSAGE [Info]	ESLint server running in node v22.11.0
+
+!ENTRY org.eclipse.lsp4e 2 0 2025-01-17 11:37:52.616
+!MESSAGE Javadoc unavailable. Failed to obtain it.
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:386)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:66)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2025-01-17 11:47:23.877
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/application-client_9.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2025-01-17 11:47:23.877
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/jobXML_2_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2025-01-17 11:47:23.877
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/beans_3_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2025-01-17 11:47:23.878
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jaxb/bindingschema_3_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2025-01-17 11:47:23.881
+!MESSAGE The given URI https://jakarta.ee/xml/ns/validation/validation-configuration-3.0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2025-01-17 11:47:23.883
+!MESSAGE The given URI http://xmlns.jcp.org/xml/ns/javaee/web-facesconfig_2_1.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-01-17 11:47:24.377
+!MESSAGE [Info]	ESLint server running in node v22.11.0
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2025-01-17 11:51:05.619
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/application-client_9.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2025-01-17 11:51:05.620
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/jobXML_2_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2025-01-17 11:51:05.620
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/beans_3_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2025-01-17 11:51:05.621
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jaxb/bindingschema_3_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2025-01-17 11:51:05.624
+!MESSAGE The given URI https://jakarta.ee/xml/ns/validation/validation-configuration-3.0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2025-01-17 11:51:05.626
+!MESSAGE The given URI http://xmlns.jcp.org/xml/ns/javaee/web-facesconfig_2_1.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-01-17 11:51:06.115
+!MESSAGE [Info]	ESLint server running in node v22.11.0
+
+!ENTRY org.eclipse.lsp4e 2 0 2025-01-17 11:52:02.119
+!MESSAGE Javadoc unavailable. Failed to obtain it.
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:386)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:66)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.eclipse.jdt.core 4 0 2025-01-17 11:52:37.597
+!MESSAGE Lombok annotation handler class lombok.eclipse.handlers.HandleValue failed
+!STACK 0
+java.lang.ClassCastException: class org.eclipse.jdt.internal.compiler.ast.LocalDeclaration cannot be cast to class org.eclipse.jdt.internal.compiler.ast.TypeDeclaration (org.eclipse.jdt.internal.compiler.ast.LocalDeclaration and org.eclipse.jdt.internal.compiler.ast.TypeDeclaration are in unnamed module of loader org.eclipse.osgi.internal.loader.EquinoxClassLoader @5546418f)
+	at lombok.eclipse.handlers.HandleValue.handle(HandleValue.java:66)
+	at lombok.eclipse.HandlerLibrary$AnnotationHandlerContainer.handle(HandlerLibrary.java:106)
+	at lombok.eclipse.HandlerLibrary.handleAnnotation(HandlerLibrary.java:237)
+	at lombok.eclipse.TransformEclipseAST$AnnotationVisitor.visitAnnotationOnLocal(TransformEclipseAST.java:259)
+	at lombok.eclipse.EclipseNode.traverse(EclipseNode.java:122)
+	at lombok.eclipse.EclipseAST.traverseChildren(EclipseAST.java:231)
+	at lombok.eclipse.EclipseNode.traverse(EclipseNode.java:101)
+	at lombok.eclipse.EclipseAST.traverseChildren(EclipseAST.java:231)
+	at lombok.eclipse.EclipseNode.traverse(EclipseNode.java:90)
+	at lombok.eclipse.EclipseAST.traverseChildren(EclipseAST.java:231)
+	at lombok.eclipse.EclipseNode.traverse(EclipseNode.java:74)
+	at lombok.eclipse.EclipseAST.traverseChildren(EclipseAST.java:231)
+	at lombok.eclipse.EclipseNode.traverse(EclipseNode.java:69)
+	at lombok.eclipse.EclipseAST.traverse(EclipseAST.java:224)
+	at lombok.eclipse.TransformEclipseAST.go(TransformEclipseAST.java:226)
+	at lombok.eclipse.TransformEclipseAST.transform(TransformEclipseAST.java:187)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at lombok.launch.PatchFixesHider$Util.invokeMethod(PatchFixesHider.java:146)
+	at lombok.launch.PatchFixesHider$Transform.transform(PatchFixesHider.java:267)
+	at org.eclipse.jdt.internal.compiler.parser.Parser.getMethodBodies(Parser.java:11446)
+	at org.eclipse.jdt.internal.compiler.SourceElementParser.parseCompilationUnit(SourceElementParser.java:996)
+	at org.eclipse.jdt.internal.core.CompilationUnitProblemFinder.process(CompilationUnitProblemFinder.java:283)
+	at org.eclipse.jdt.internal.core.CompilationUnit.buildStructure(CompilationUnit.java:271)
+	at org.eclipse.jdt.internal.core.Openable.generateInfos(Openable.java:246)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:569)
+	at org.eclipse.jdt.internal.core.CompilationUnit.makeConsistent(CompilationUnit.java:1245)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.makeConsistent(ReconcileWorkingCopyOperation.java:182)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.executeOperation(ReconcileWorkingCopyOperation.java:108)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:751)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:816)
+	at org.eclipse.jdt.internal.core.CompilationUnit.reconcile(CompilationUnit.java:1419)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:132)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy$1.run(JavaReconcilingStrategy.java:94)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:91)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:158)
+	at org.eclipse.jdt.internal.ui.text.CompositeReconcilingStrategy.reconcile(CompositeReconcilingStrategy.java:94)
+	at org.eclipse.jdt.internal.ui.text.JavaCompositeReconcilingStrategy.reconcile(JavaCompositeReconcilingStrategy.java:107)
+	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:78)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:207)
+
+!ENTRY org.eclipse.lsp4e 2 0 2025-01-17 11:54:24.747
+!MESSAGE Javadoc unavailable. Failed to obtain it.
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:386)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:66)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.eclipse.core.jobs 2 2 2025-01-17 11:55:19.331
+!MESSAGE Job found still running after platform shutdown.  Jobs should be canceled by the plugin that scheduled them during shutdown: org.springframework.ide.eclipse.boot.dash.views.BootDashActions$RunOrDebugStateAction$1 RUNNING
+	 at java.base/jdk.internal.misc.Unsafe.park(Native Method)
+	 at java.base/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:269)
+	 at java.base/java.util.concurrent.CompletableFuture$Signaller.block(CompletableFuture.java:1866)
+	 at java.base/java.util.concurrent.ForkJoinPool.unmanagedBlock(ForkJoinPool.java:3780)
+	 at java.base/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3725)
+	 at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1939)
+	 at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
+	 at org.springframework.ide.eclipse.boot.dash.views.BootDashActions$RunOrDebugStateAction$1.run(BootDashActions.java:382)
+	 at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SESSION 2025-01-17 11:55:19.314 -----------------------------------------------
+eclipse.buildId=4.34.0.202411281622
+java.version=21.0.5
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Framework arguments:  -product org.springframework.boot.ide.branding.sts4
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springframework.boot.ide.branding.sts4
+
+!ENTRY ch.qos.logback.classic 1 0 2025-01-17 11:55:21.589
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2025-01-17 11:55:22.747
+!MESSAGE Logback config file: C:\workspace\SpringBoot\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.7.0.20241001-1350.xml
+
+!ENTRY org.eclipse.ui 2 0 2025-01-17 11:55:23.089
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2025-01-17 11:55:23.089
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2025-01-17 11:55:23.239
+!MESSAGE Unable to load class 'org.eclipse.e4.ui.workbench.renderers.swt.cocoa.CocoaUIHandler' from bundle '171'
+!STACK 0
+java.lang.ClassNotFoundException: org.eclipse.e4.ui.workbench.renderers.swt.cocoa.CocoaUIHandler cannot be found by org.eclipse.e4.ui.workbench.renderers.swt_0.16.600.v20241008-1401
+	at org.eclipse.osgi.internal.loader.BundleLoader.generateException(BundleLoader.java:562)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass0(BundleLoader.java:557)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:434)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:174)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.loadClass(EquinoxBundle.java:643)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.createFromBundle(ReflectionContributionFactory.java:88)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.doCreate(ReflectionContributionFactory.java:59)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.create(ReflectionContributionFactory.java:37)
+	at org.eclipse.e4.ui.internal.workbench.swt.E4Application.createE4Workbench(E4Application.java:273)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:592)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:570)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:178)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:143)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:109)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:439)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:271)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:668)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:605)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
+
+!ENTRY org.eclipse.ui 2 0 2025-01-17 11:55:23.322
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2025-01-17 11:55:23.322
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2025-01-17 11:55:27.406
+!MESSAGE Command list starting LS: org.springframework.tooling.boot.ls
+START:
+C:\Developkits\sts-4.27.0.RELEASE\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_21.0.5.v20241023-1957\jre\bin\javaw.exe
+-Dsts.lsp.client=eclipse
+-Xmx1024m
+-XX:TieredStopAtLevel=1
+-Dspring.config.location=classpath:/application.properties
+-Xlog:jni+resolve=off
+-XX:ErrorFile=C:/workspace/SpringBoot/.metadata/.plugins/org.springframework.tooling.boot.ls/fatal-error-spring-boot_1737082527405
+-Dlanguageserver.hover-timeout=225
+-jar
+C:\Developkits\sts-4.27.0.RELEASE\plugins\org.springframework.tooling.boot.ls_1.59.0.202411281450\servers\spring-boot-language-server\spring-boot-language-server-1.59.0-SNAPSHOT-exec.jar
+END
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-01-17 11:55:27.407
+!MESSAGE DelegatingStreamConnectionProvider - Starting Boot LS
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2025-01-17 11:55:27.411
+!MESSAGE Started org.springframework.tooling.boot.ls LS process 10284
+
+!ENTRY org.eclipse.egit.ui 2 0 2025-01-17 11:55:28.259
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\kosmo'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-01-17 11:55:28.321
+!MESSAGE Boot project ADDED: B00SpringBootProject
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-01-17 11:55:28.323
+!MESSAGE Starting Boot LS...
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-01-17 11:55:28.325
+!MESSAGE Started Boot LS process
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-01-17 11:55:28.326
+!MESSAGE Boot project ADDED: B01BasicProjectLombok
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-01-17 11:55:28.326
+!MESSAGE Boot project ADDED: B01CopyLombok
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-01-17 11:55:28.327
+!MESSAGE Boot project ADDED: B02FormSubmit
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-01-17 11:55:28.328
+!MESSAGE Boot project ADDED: B03DI
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-01-17 11:55:28.328
+!MESSAGE Boot project ADDED: B04Validator
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-01-17 11:55:28.329
+!MESSAGE Boot project ADDED: B05ReadProperties
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-01-17 11:55:28.330
+!MESSAGE Boot project ADDED: B06JdbcTemplate
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-01-17 11:55:28.330
+!MESSAGE Boot project ADDED: B07aMybatis
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-01-17 11:55:28.331
+!MESSAGE Boot project ADDED: B07bMybatisParameter
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-01-17 11:55:28.332
+!MESSAGE Boot project ADDED: B07cMybatisLogback
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-01-17 11:55:28.332
+!MESSAGE Boot project ADDED: B07dMybatisBoard
+
+!ENTRY org.eclipse.lsp4e 2 0 2025-01-17 11:56:07.579
+!MESSAGE Javadoc unavailable. Failed to obtain it.
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:386)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:66)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.eclipse.mylyn.tasks.ui 2 0 2025-01-17 12:00:02.977
+!MESSAGE No search provider was registered. Tasks search is not available.

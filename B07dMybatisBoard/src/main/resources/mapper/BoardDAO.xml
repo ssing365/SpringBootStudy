@@ -55,4 +55,26 @@
 		INSERT INTO myboard (idx, name, title, content)
 		VALUES (myboard_seq.nextval, #{_name}, #{_title}, #{_content})
 	</insert>
+	
+	<!-- 열람 : 일련번호에 해당하는 게시물 인출 후 DTO로 반환 -->
+	<select id="view" resultType="com.edu.springboot.jdbc.BoardDTO"
+		parameterType = "com.edu.springboot.jdbc.BoardDTO">
+		SELECT * FROM myboard WHERE idx=#{idx}	
+	</select>
+	
+	<!-- 수정 : 반환값은 int이므로 resultType 생략  -->
+	<update id="edit" parameterType="com.edu.springboot.jdbc.BoardDTO">
+		UPDATE myboard SET
+		name=#{name}, title=#{title}, content=#{content}
+		WHERE idx = #{idx}
+	</update>
+	
+	<!-- 삭제 : 매개변수가 한 개 이므로 #{param1} 혹은 #{0}로 작성할 수 있다.  -->
+	<delete id="delete">
+		DELETE FROM myboard WHERE idx=#{0}
+	</delete>
+	
+	<update id="visitCountPlus" parameterType="com.edu.springboot.jdbc.BoardDTO">
+		UPDATE myboard SET visitcount = visitcount+1 WHERE idx = #{idx}
+	</update>
 </mapper>
