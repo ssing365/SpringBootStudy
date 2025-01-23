@@ -1,10 +1,16 @@
 package com.edu.springboot;
 
+import java.util.HashMap;
+import java.util.Map;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.edu.springboot.jdbc.IMemberService;
 import com.edu.springboot.jdbc.MemberDTO;
@@ -70,7 +76,7 @@ public class MainController {
 		return "redirect:list.do";
 	}
 	
-	// 회원 삭제
+	// 회원 삭제 - 동기화 방식
 	@RequestMapping("/delete.do")
 	public String member4(MemberDTO memberDTO) {
 		int result = dao.delete(memberDTO);
@@ -78,6 +84,30 @@ public class MainController {
 		else System.out.println("삭제 실패");
 		
 		return "redirect:list.do";
+	}
+	
+	// 회원 삭제 - Ajax를 통한 비동기 방식. post방식
+	@PostMapping("/deleteAjax.do")
+	@ResponseBody
+	public Map<String, String> member10(MemberDTO memberDTO) {
+		
+		// 콜백데이터 생성을 위해 Map인스턴스 생성.
+		// JSON객체 형식으로 출력된다.
+		Map<String, String> map = new HashMap<>();
+		
+		int result = dao.delete(memberDTO);
+		String str = "";
+		if(result == 1) {
+			System.out.println("삭제되었습니다.");
+			str = "삭제되었습니다";
+			map.put("result", "success");
+		}
+		else {
+			System.out.println("삭제 실패");
+			str = "삭제 실패";
+			map.put("result", "fail");
+		}
+		return map;
 	}
 	
 }

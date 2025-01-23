@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.edu.springboot.jdbc.ITicketService">
+	
+	<!-- 구매 금액에 대한 입력처리 -->
+	<insert id="payInsert"
+		parameterType = "com.edu.springboot.jdbc.PayDTO">
+		insert into transaction_pay (userid, amount)
+			values(#{userid}, #{amount})
+	</insert>
+	
+	<!-- 구매한 티켓의 매수 입력처리 -->
+	<insert id="ticketInsert"
+		parameterType = "com.edu.springboot.jdbc.TicketDTO">
+		insert into transaction_ticket (userid, t_count)
+			values(#{userid}, #{t_count})
+	</insert>
+</mapper>

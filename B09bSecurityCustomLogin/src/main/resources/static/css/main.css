@@ -1,0 +1,13 @@
+@charset "UTF-8";
+* {
+	font-size : 12px; font-family : verdana;
+}
+
+/* 
+클래스 선택자로 사이즈와 배경이 지정됨
+repeat 구문으로 해당 영역 내에서 반복된다.
+*/
+.spring{
+	width : 100%; height: 187px;
+	background : url('../images/security.jpg') repeat;
+}
