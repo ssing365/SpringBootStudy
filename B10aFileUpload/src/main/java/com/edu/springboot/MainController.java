@@ -107,8 +107,6 @@ public class MainController {
 						MyFunctions.renameFile(uploadDir, originalFileName);
 				
 				saveFileMaps.put(originalFileName, savedFileName);
-				
-				
 			}
 			
 			model.addAttribute("saveFileMaps", saveFileMaps);
