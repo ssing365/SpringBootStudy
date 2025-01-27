@@ -110,4 +110,19 @@ public class MainController {
 		return map;
 	}
 	
+	/*
+	 * RestController에서 제공하는 JSON데이터를 받아서 
+	 * 출력만 하면 되므로 여기서는 View에 대한 매핑만 하면 된다.
+	 */
+	@GetMapping("/boardList.do")
+	public String BoardList() {
+		return "boardList";
+	}
+	
+	@GetMapping("/boardView.do")
+	public String BoardView() {
+		return "boardView";
+	}
+	
+	
 }

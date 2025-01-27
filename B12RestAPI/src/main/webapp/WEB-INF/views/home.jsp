@@ -64,7 +64,14 @@
 		내용: <textarea name="content" cols="30" rows="10"></textarea>
 		<input type="submit" value="요청하기" />
 	</form>
-</fieldset>
+	</fieldset>
+	
+	<h2>Ajax로 게시판 구현</h2>
+	<ul>
+		<li><a href="/boardList.do">목록</a></li>
+		<li><a href="/boardView.do">내용보기</a></li>
+		<li><a href="/boardListView.do">퀴즈]목록 + 내용보기</a></li>
+	</ul>
 	
 </body>
 </html>
