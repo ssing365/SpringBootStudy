@@ -13,7 +13,7 @@
     	localhost(127.0.0.1)로 기술하면 내 컴퓨터에서만 테스트할 수 있고,
     	내부 IP를 사용하면 다른 사람이 내 컴퓨터에 접속할 수 있다.
     	*/
-        const webSocket = new WebSocket("ws://192.168.0.68:8586/myChatServer");
+        const webSocket = new WebSocket("ws:/localhost:8586/myChatServer");
     	// 채팅을 위한 전역변수 생성
         let chatWindow, chatMessage, chatId;
 		//채팅창이 열리면 대화창, 메시지 입력상자, 대화명 입력상자의 DOM을 얻어와 전역변수에 저장
