@@ -49,3 +49,8 @@ dependencies {
 tasks.named('test') {
 	useJUnitPlatform()
 }
+
+// 단독실행용 배포는 비활성화
+bootWar.enabled = false
+// 서버 배포용은 활성화
+war.enabled = true
